@@ -47,10 +47,11 @@
 .pub_section .title_box button {
   margin-top: 30px;
   padding: 10px 40px;
-  border: 1px solid var(--point);
   text-transform: uppercase;
   font-weight: 600;
+  background-color: #fff;
 }
+
 .pub_section figure{
   position: relative;
   max-width: 800px;
@@ -96,15 +97,7 @@
   border-radius: 50%;
   margin-right: 8px;
 }
-.pub_section .content_container ul>li>ul>li:nth-child(1){
-  background-color: #ed1c24;
-}
-.pub_section .content_container ul>li>ul>li:nth-child(2){
-  background-color: #f69124;
-}
-.pub_section .content_container ul>li>ul>li:nth-child(3){
-  background-color: #212228;
-}
+
 @media screen and (min-width:1000px) {
   .pub_section .content_container>ul{
     display: flex;
@@ -148,4 +141,25 @@
 .pub_wrap.active .title_box h2 {
   transform: translateY(0);
   opacity: 1;
+}
+
+/* 컬러 */
+.pub_section1 .content_container ul>li>ul>li:nth-child(1){
+  background-color: #ed1c24;
+}
+.pub_section1 .content_container ul>li>ul>li:nth-child(2){
+  background-color: #f69124;
+}
+.pub_section1 .content_container ul>li>ul>li:nth-child(3){
+  background-color: #212228;
+}
+
+.pub_section2 .content_container ul>li>ul>li:nth-child(1){
+  background-color: #AD8C6B;
+}
+.pub_section2 .content_container ul>li>ul>li:nth-child(2){
+  background-color: #7B8C7A;
+}
+.pub_section2 .content_container ul>li>ul>li:nth-child(3){
+  background-color: #2A2728;
 }

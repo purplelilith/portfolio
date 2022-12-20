@@ -1,13 +1,16 @@
 $(function(){
 
   function fnScroll() {
-    var offset = $('.pub_section1').offset().top
-    if(scry >= offset - winh * 0.5) {
-      $('.pub_wrap').addClass('active')
-    }else {
-      $('.pub_wrap').removeClass('active')
-    }
-  }
+    $('.pub_wrap').each(function(){
+      var offset = $(this).offset().top
+      if(scry >= offset - winh * 0.3) {
+        $(this).addClass('active')
+      }else {
+        $(this).removeClass('active')
+      }//if else 
+    })//each    
+  }//fn
+
   fnScroll()
   $(window).scroll(function(){
     fnScroll()

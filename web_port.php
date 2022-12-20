@@ -1,6 +1,6 @@
-<div class="pub_wrap pub_wrap1" data-num="1">
+<div class="pub_wrap">
 <img class="section_bg" src="./img/web_port/bg_sunshine.png" alt="">
-  <section class="pub_section">
+  <section class="pub_section pub_section1">
     <div class="title_box">
       <i>web publishing 01.</i>
       <h2>선샤인 키즈 리뉴얼 홈페이지</h2>
@@ -43,9 +43,9 @@
     </div>    
   </section>
 </div>
-<div class="pub_wrap pub_wrap2" data-num="2">
+<div class="pub_wrap">
 <img class="section_bg" src="./img/web_port/bg_sunshineweb.png" alt="">
-  <section class="pub_section">
+  <section class="pub_section pub_section2">
     <div class="title_box">
       <i>web publishing 02.</i>
       <h2>선샤인 웹에이전시 홈페이지</h2>
