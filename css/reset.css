@@ -1,0 +1,37 @@
+* {
+ margin: 0;
+ padding: 0; 
+ word-break: keep-all; /* 단어 단위로 줄내림이 된다 */
+}
+li {
+  list-style: none;
+}
+img, svg, iframe, video {
+  display: block;
+}
+iframe {
+  border: none;
+}
+input, textarea, select {
+  box-sizing: border-box;
+}
+table {
+  border-collapse: collapse;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+body{
+  position: relative;
+}
+body,html {
+  height: 100%;
+  box-sizing: border-box;
+}
+.hidden {
+  position : fixed;
+  left: -10000px; 
+}/* 쓸모없는 내용을 숨기는 방법 중 하나 */

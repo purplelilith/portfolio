@@ -1,0 +1,157 @@
+* {
+  font-family: inherit; /* inherit : 부모의 설정을 강제로 받아오라는 뜻 */
+  font-size: inherit;
+  color: inherit;
+  font-weight:inherit;
+  font-style: inherit;
+  text-decoration: inherit;  
+}
+body {
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif; 
+  /* 앞에 영어폰트/뒤에 한글폰트/ 앞에있는 폰트가 우선순위고 
+  해당되는 폰트가 없을 시 뒷폰트 적용 */
+  font-size: 16px;
+  font-weight: normal;
+  color: #444;
+  font-style: normal; /* 에이전트 스타일이 볼드나 이탤릭으로 설정된 아이들을 원래대로 돌려놓는 css */
+  text-decoration: none;
+}
+.serif {
+  font-family: 'Nanum Myeongjo', serif; 
+  /*같은 한글폰트에 두가지 디자인을 적용하고 싶을 경우, 클래스로 지정한다 */
+}
+:root {
+  --main_color: #ed1c24; 
+  --sub_color: #f69124; 
+  --dark_color: #212228;
+  /* css에서 변수를 선언하는 방법 : -- (변수이름) 
+  자주사용하는 컬러는 style.css에서 선언해 주어야 수정, 사용이 쉽다*/
+}
+.sub_title{
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 20px;
+  color: var(--sub_color);
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.sub_title::before {
+ content: "";
+ display: inline-block;
+ width: 3px;
+ height: 16px;
+ background: var(--sub_color);
+ margin-right: 5px;
+ vertical-align: middle;
+}
+.sub_title::after {
+ content: "";
+ position: absolute;
+ width: 5px;
+ height: 10px;
+ top: 3px; left: -1px;
+ background-color: var(--main_color);
+}
+.em {
+  font-size: 1.15em;
+  font-weight: 600;
+}
+.point{
+  color: var(--main_color);
+}
+
+/* button design --------------------- */
+.form_btn {
+  padding: 5px 24px;
+  transition: all 0.3s;
+  color:#fff;
+}
+.btn_style1 {
+  background-color: var(--sub_color);
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+.btn_style1:hover {
+  background-color: var(--main_color);
+}
+.btn_style2 {
+  background-color: #666;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+.btn_style2:hover {
+  background-color: var(--dark_color);
+}
+
+/* board design ------------------------ */
+table.board {
+  width: 100%;
+
+}
+table.board td,
+table.board th{
+  text-align: center;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+} 
+table.board th{
+  background-color: var(--dark_color);
+  color: #fff;
+}
+table.board tr:nth-child(even) {
+  background-color: #eee;
+}
+table.board a:hover{
+  color: var(--main_color);
+}
+table.board td:nth-child(2){
+  width: 50%;
+  text-align: left;
+}
+@media screen and (max-width:800px){
+  table.board,
+  table.board>* {
+    display: block;
+  }
+  table.board tr{
+    width: 100%;
+    display: flex;
+  }
+  table.board tr>* {
+    display: block;
+  }
+  table.board tr>*:nth-child(1){width: 40px;}  
+  table.board tr>*:nth-child(2){
+    flex:1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  table.board tr>*:nth-child(3){width: 80px;}
+
+  table.board th:nth-child(4),
+  table.board td:nth-child(4),
+  table.board th:nth-child(5),
+  table.board td:nth-child(5) {
+    display: none;
+  }
+}
+.search_form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+}
+.search_form>*{
+  margin: 15px 5px;
+  padding: 5px 10px;
+}
+@media screen and (max-width:600px){
+  .search_form>* {
+   width: 100%;
+  }
+}

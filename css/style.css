@@ -1,0 +1,26 @@
+* {
+  font-family: inherit; /* inherit : 부모의 설정을 강제로 받아오라는 뜻 */
+  font-size: inherit;
+  color: inherit;
+  font-weight:inherit;
+  font-style: inherit;
+  text-decoration: inherit;  
+}
+body {
+  font-family: 'Josefin Sans', 'Noto Sans KR', sans-serif; 
+  /* 앞에 영어폰트/뒤에 한글폰트/ 앞에있는 폰트가 우선순위고 
+  해당되는 폰트가 없을 시 뒷폰트 적용 */
+  font-size: 14px;
+  font-weight: normal;
+  color: #333;
+  font-style: normal; /* 에이전트 스타일이 볼드나 이탤릭으로 설정된 아이들을 원래대로 돌려놓는 css */
+  text-decoration: none;
+  position: relative;
+}
+.num{
+  font-family: 'Noto Sans KR', sans-serif; 
+}
+
+:root{
+  --point: #5b6a57;
+}

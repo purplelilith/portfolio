@@ -1,0 +1,215 @@
+/* 컨텍트 부분 */
+.contect_section ul>li>a>i {
+  border: 1px solid #888;
+  border-radius: 50%;
+}
+.contect_section ul>li>a>i {
+  padding: 10px;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width:1000px) {
+  .contect_section {
+    position: absolute;
+    top: 50%;
+    right:0;
+    transform: translateY(-50%);
+    width: 150px;
+    height: 220px;
+    background: url(../img/contact_bg.png);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    padding-top: 40px;
+    box-sizing: border-box;
+  }
+  .contect_section h2{
+    font-size: 1.4em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .contect_section ul>li{
+    margin: 10px 0;
+  }
+  .contect_section ul>li>a>p{
+    font-size: 0.8em;
+    color: #ccc;
+    font-weight: 300;
+  }
+  .contect_section ul>li>a>i {
+    color: #fff
+  }
+}
+@media screen and (max-width:1000px) {
+  .contect_section ul>li>a>p,
+  .contect_section h2{
+    display: none;
+  }
+  .contect_section ul {
+    position: fixed;
+    display: flex;
+    right: 10px;
+    top: 15px;
+  }
+  .contect_section ul>li{
+    margin-left: 8px;
+  }
+  .contect_section ul>li>a>i {
+    color: var(--point);
+  }
+}
+
+
+/* 사진 및 기본정보 */
+.profile {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 100px;
+  margin-bottom: 150px;
+}
+.profile figure{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.profile>figure>img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 1px solid var(--point);
+}
+.profile figcaption {
+  margin-top: 20px;
+}
+.profile figcaption b{
+  display: block;
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.profile figcaption p:not(.birth){
+  font-weight: 500;
+}
+.profile figcaption .birth {
+  margin-top: 6px;
+}
+
+
+
+/* text section ----------------------- */
+
+.profile .text_section {
+  width: 95%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+.profile .text_section h2 {
+  font-size: 1.4em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: var(--point);
+}
+.profile .text_section div>section {
+  margin-bottom: 40px;
+}
+
+.profile .text_section .left .skill ul {
+  display: flex;
+}
+.profile .text_section .left .skill ul li {
+  margin-left: 10px;
+  border: 1px solid #888;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile .text_section .left .skill ul li img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: center;
+}
+.profile .text_section i.num {
+  font-size: 0.8em;
+  font-style: italic;
+}
+.profile .text_section b{
+  display: block;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+.profile .text_section p {
+  color: #666;
+}
+.profile .text_section .inner {
+  margin-bottom: 15px;
+}
+.profile .back_font{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.07;
+  width: 100%;
+  max-width: 1000px;
+}
+@media screen and (min-width:800px) {
+  .profile .text_section{
+    display: flex;
+    justify-content: center;
+  }
+  .profile .text_section .left,
+  .profile .text_section .right{
+    width: 50%;
+    padding: 20px 0;
+  }
+  .profile .text_section .left {
+    text-align: right;
+    padding-right: 30px;
+  }
+  .profile .text_section .right {
+    position: relative;
+    padding-left: 30px;
+    border-left: 1px solid black;
+  }
+  .profile .text_section div>section:last-child{
+    margin-bottom: 0;
+  }
+  .profile .text_section .right::before,
+  .profile .text_section .right::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    left: 0;
+    transform: translateX(-50%);
+    background: var(--point);
+  }
+  .profile .text_section .right::before{
+    top: 0;
+  }
+  .profile .text_section .right::after{
+    bottom: 0;
+  }
+  .profile .text_section .left .skill ul{
+    justify-content: flex-end;
+  }
+
+}
+@media screen and (max-width:800px) {
+  .profile .text_section {
+    text-align: center;
+  }
+  .profile .text_section .left .skill ul {
+    justify-content: center;
+  }
+}
