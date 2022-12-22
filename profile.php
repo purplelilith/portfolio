@@ -1,21 +1,4 @@
-<div class="contect_section">
-  <h2>contact</h2>
-  <ul>
-    <li>
-      <a href="#">
-        <i class="fa-solid fa-phone"></i>
-        <p>010 - 6388 - 1150</p>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <i class="fa-solid fa-envelope"></i>
-        <p>acidlime1987@naver.com</p>
-      </a>
-    </li>
-  </ul>
-</div>
-<div class="profile">
+<div class="profile">  
   <img class="back_font" src="./img/back_font.png" alt="">
   <figure>
     <img src="./img/profile2.png" alt="">

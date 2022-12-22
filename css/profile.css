@@ -1,74 +1,10 @@
-/* 컨텍트 부분 */
-.contect_section ul>li>a>i {
-  border: 1px solid #888;
-  border-radius: 50%;
-}
-.contect_section ul>li>a>i {
-  padding: 10px;
-  font-size: 0.8em;
-  margin-bottom: 10px;
-}
-
-@media screen and (min-width:1000px) {
-  .contect_section {
-    position: absolute;
-    top: 50%;
-    right:0;
-    transform: translateY(-50%);
-    width: 150px;
-    height: 220px;
-    background: url(../img/contact_bg.png);
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    padding-top: 40px;
-    box-sizing: border-box;
-  }
-  .contect_section h2{
-    font-size: 1.4em;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-  }
-  .contect_section ul>li{
-    margin: 10px 0;
-  }
-  .contect_section ul>li>a>p{
-    font-size: 0.8em;
-    color: #ccc;
-    font-weight: 300;
-  }
-  .contect_section ul>li>a>i {
-    color: #fff
-  }
-}
-@media screen and (max-width:1000px) {
-  .contect_section ul>li>a>p,
-  .contect_section h2{
-    display: none;
-  }
-  .contect_section ul {
-    position: fixed;
-    display: flex;
-    right: 10px;
-    top: 15px;
-  }
-  .contect_section ul>li{
-    margin-left: 8px;
-  }
-  .contect_section ul>li>a>i {
-    color: var(--point);
-  }
-}
-
-
-/* 사진 및 기본정보 */
 .profile {
-  width: 95%;
+  position: relative;
   margin: 0 auto;
   padding-top: 100px;
   margin-bottom: 150px;
 }
+
 .profile figure{
   width: 100%;
   margin: 0 auto;
@@ -153,7 +89,6 @@
 }
 .profile .back_font{
   position: absolute;
-  top:50%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0.07;
@@ -203,7 +138,9 @@
   .profile .text_section .left .skill ul{
     justify-content: flex-end;
   }
-
+  .profile .back_font{
+    top: 55%;
+  }
 }
 @media screen and (max-width:800px) {
   .profile .text_section {
@@ -212,4 +149,37 @@
   .profile .text_section .left .skill ul {
     justify-content: center;
   }
+  .profile .back_font{
+    top: 42%;
+  }
+}
+
+
+/* motion */
+
+.profile .back_font{
+  opacity: 0;
+  transition: opacity 2s;
+}
+.profile.active .back_font{
+  opacity: 0.07;
+}
+.profile .text_section {
+  overflow: hidden;
+}
+.profile .text_section .left,
+.profile .text_section .right {
+  transition: all 2s;
+  opacity: 0;
+}
+.profile .text_section .left{
+  transform: translateX(-100px);
+}
+.profile .text_section .right {
+  transform: translateX(100px);
+}
+.profile.active .text_section .left,
+.profile.active .text_section .right {
+  transform: translateX(0);
+  opacity: 1;
 }

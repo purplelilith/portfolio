@@ -1,0 +1,69 @@
+/* 컨텍트 부분 */
+.contact_section {
+  position: fixed;
+  z-index: 2;
+}
+.contact_section ul>li>a>i {
+  border: 1px solid #888;
+  border-radius: 50%;
+}
+.contact_section ul>li>a>i {
+  padding: 10px;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width:1000px) {
+  .contact_section {
+    top: 50%;
+    right:0;
+    width: 150px;
+    height: 220px;
+    margin-top: -110px;
+    background: url(../img/contact_bg.png);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    padding-top: 40px;
+    box-sizing: border-box;
+  }
+  .contact_section h2{
+    font-size: 1.4em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .contact_section ul>li{
+    margin: 10px 0;
+  }
+  .contact_section ul>li>a>p{
+    font-size: 0.8em;
+    color: #ccc;
+    font-weight: 300;
+  }
+  .contact_section ul>li>a>i {
+    color: #fff
+  }
+}
+@media screen and (max-width:1000px) {
+  .contact_section ul>li>a>p,
+  .contact_section h2{
+    display: none;
+  }  
+  .contact_section {
+    padding: 10px;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+  }
+  .contact_section ul{
+    display: flex;
+  }
+  .contact_section ul>li{
+    margin-left: 8px;
+  }
+  .contact_section ul>li>a>i {
+    color: var(--point);
+    background-color: rgba(255,255 ,255,0.2);
+  }
+}
