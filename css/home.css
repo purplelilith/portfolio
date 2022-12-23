@@ -44,14 +44,14 @@
   opacity: 0.5;
   background-image: url(../img/home_text.png);
   background-size: contain;   
-  animation: text_box 800000s linear infinite ; 
+  animation: text_box 80000s linear infinite ; 
 }
 @keyframes text_box {
   0% {
     background-position: 0 center;  
   }
   100%{
-    background-position: -10000000% center;
+    background-position: -10000000px center;
   }
 }
 

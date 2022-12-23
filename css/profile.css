@@ -183,3 +183,12 @@
   transform: translateX(0);
   opacity: 1;
 }
+.profile figure {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s;
+}
+.profile.active figure {
+  opacity: 1;
+  transform: translateY(0);
+}

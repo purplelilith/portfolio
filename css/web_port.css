@@ -4,20 +4,19 @@
   padding: 20px 0;
   border-top: 1px solid #ccc;
   box-sizing: border-box;
-  padding-bottom: 150px;
+
   overflow: hidden;
 }
 .pub_section {
   width: 95%;
   max-width: 1100px;
   margin: 0 auto;
-  margin-top: 100px;
+
 }
 .pub_wrap .section_bg { 
   position: absolute;
   z-index: -1;
-  left: 0;
-  top: 0;
+  transform: scale(1.3);
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -32,8 +31,18 @@
 }
 .pub_section .title_box h2{
   margin: 8px auto;
-  font-size: 1.5em;
   font-weight: 600;
+}
+
+@media screen and (min-width:550px){
+  .pub_section .title_box h2{
+    font-size: 2em;
+  }
+}
+@media screen and (max-width:550px){
+  .pub_section .title_box h2{
+    font-size: 6vw;
+  }
 }
 .pub_section .title_box h2::before {
   content: "";
@@ -51,24 +60,28 @@
   font-weight: 600;
   background-color: #fff;
 }
-
 .pub_section figure{
   position: relative;
   max-width: 800px;
   margin: 0 auto;
-  transition: transform 1s;
-}
-.pub_section figure:hover {
-  transform: scale(1.1);
 }
 .pub_section figure::after {
   content: "";
   display: block;
   padding-top: 53%;
 }
-.pub_section figure img{
+.pub_section figure a {
+  display: block;
   position: absolute;
   width: 100%;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+.pub_section figure a img{
+  width: 100%;
+}
+.pub_section figure a:hover {
+  transform: scale(1.05);
 }
 .pub_section .content_container {
   width: 95%;
@@ -114,22 +127,46 @@
   .pub_section .content_container>ul>li:nth-child(6) {
     width: 45%;
   }
+  .pub_section {
+    margin-top: 100px;
+  }
+  .pub_wrap{
+    padding-bottom: 150px;
+  }
 }
 @media screen and (max-width:1000px) {
+  .pub_section {
+    margin-top: 60px;
+  }
+  .pub_wrap{
+    padding-bottom: 100px;
+  }
 }
 
 /* motion */
+.pub_wrap .bg_wrap {
+ overflow: hidden;
+}
 .pub_wrap .section_bg { 
   opacity: 0;
-  transition: opacity 3s, scale 10s;
+  transition: opacity 3s;
 }
 .pub_wrap.active .section_bg {
-  opacity: 0.8;
-  transform: scale(1.4);
+  opacity: 1;
+  animation: bg_motion 20s linear infinite;
+}
+
+@keyframes bg_motion{
+  0%{
+   transform: scale(1.2);
+  }
+  100%{
+   transform: scale(2);
+  }
 }
 
 .pub_section .title_box i,
-.pub_section .title_box h2
+.pub_section .title_box h2 
 {
   opacity: 0;
   transition: all 1s;

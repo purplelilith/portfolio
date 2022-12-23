@@ -18,12 +18,13 @@ $(function () {
         'transform': `translateY(0)`
       })
     }
-    if (scry >= y) {
+    if (scry >= y - winh * 0.3) {
       $('.profile').addClass('active')
     } else {
       $('.profile').removeClass('active')
     }
   }//fn
+
 
   motion()
   fnHomeText()  
@@ -41,7 +42,7 @@ $(function () {
   }
 
   /* 퍼블리싱 상세 페이지 모션 */
-  function fnScroll() {
+  function fnPubMotion() {
     $('.pub_wrap').each(function () {
       var offset = $(this).offset().top
       if (scry >= offset - winh * 0.3) {
@@ -52,11 +53,11 @@ $(function () {
     })//each    
   }//fn
 
-  fnScroll()
+  fnPubMotion()
   $(window).scroll(function () {
-    fnScroll()
+    fnPubMotion()
   }).resize(function () {
-    fnScroll()
+    fnPubMotion()
   })
 
 })

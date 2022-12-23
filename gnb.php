@@ -1,13 +1,10 @@
 <nav class="gnb">
     <ul>
       <li>
-        <a href="#">about me</a>
+        <a href="#profile">about me</a>
       </li>
       <li>
-        <a href="#">publishing</a>
-      </li>
-      <li>
-        <a href="#">design</a>
+        <a href="#publishing">publishing</a>
       </li>
     </ul>
   </nav>

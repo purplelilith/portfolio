@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./css/web_port.css">
   <link rel="stylesheet" href="./css/home.css">
   <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/footer.css">
   <script src="https://kit.fontawesome.com/64e2084006.js" crossorigin="anonymous"></script>
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="./js/script.js"></script>

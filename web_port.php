@@ -1,13 +1,13 @@
+<a name="publishing"></a>
 <div class="pub_wrap">
-<img class="section_bg" src="./img/web_port/bg_sunshine.png" alt="">
+  <div class="bg_wrap"><img class="section_bg" src="./img/web_port/bg_sunshine.png" alt=""></div>
   <section class="pub_section pub_section1">
     <div class="title_box">
       <i>web publishing 01.</i>
       <h2>선샤인 키즈 리뉴얼 홈페이지</h2>
-      <a href="#"><button>go</button></a>
     </div>
     <figure>
-      <img src="./img/web_port/sunshine_kids.png" alt="">
+      <a href="http://127.0.0.1/01-sunshine-kids/" target="_blank"><img src="./img/web_port/sunshine_kids.png" alt=""></a>
     </figure>
     <div class="content_container">
       <ul>
@@ -40,19 +40,18 @@
           <p>선샤인 키즈 홈페이지를 리뉴얼, 리디자인 했습니다. 다양한 모션을 적용해보며 수업을 진행하였으며, 다채로운 기술을 습득하였습니다.</p>
         </li>
       </ul>
-    </div>    
+    </div>
   </section>
 </div>
 <div class="pub_wrap">
-<img class="section_bg" src="./img/web_port/bg_sunshineweb.png" alt="">
+  <div class="bg_wrap"><img class="section_bg" src="./img/web_port/bg_sunshineweb.png" alt=""></div>
   <section class="pub_section pub_section2">
     <div class="title_box">
       <i>web publishing 02.</i>
       <h2>선샤인 웹에이전시 홈페이지</h2>
-      <a href="#"><button>go</button></a>
     </div>
     <figure>
-      <img src="./img/web_port/sunshine_web.png" alt="">
+      <a href="http://127.0.0.1/02-ex/" target="_blank"><img src="./img/web_port/sunshine_web.png" alt=""></a>
     </figure>
     <div class="content_container">
       <ul>
@@ -85,6 +84,6 @@
           <p>선샤인 웹에이전시 홈페이지를 리뉴얼, 리디자인 했습니다. 선샤인 키즈 홈페이지 수업과 병행하며, 별도의 과제로 진행한 홈페이지입니다. 모던하고 클래식한 무드로 진행하였습니다.</p>
         </li>
       </ul>
-    </div>    
+    </div>
   </section>
 </div>
