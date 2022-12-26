@@ -1,6 +1,10 @@
 <a name="publishing"></a>
 <div class="pub_wrap">
-  <div class="bg_wrap"><img class="section_bg" src="./img/web_port/bg_sunshine.png" alt=""></div>
+  <div class="bg_wrap">
+    <span class="bg1-1"></span>
+    <span class="bg1-2"></span>
+    <span class="bg1-3"></span>
+  </div>
   <section class="pub_section pub_section1">
     <div class="title_box">
       <i>web publishing 01.</i>
@@ -44,7 +48,11 @@
   </section>
 </div>
 <div class="pub_wrap">
-  <div class="bg_wrap"><img class="section_bg" src="./img/web_port/bg_sunshineweb.png" alt=""></div>
+  <div class="bg_wrap">
+    <span class="bg2-1"></span>
+    <span class="bg2-2"></span>
+    <span class="bg2-3"></span>
+  </div>
   <section class="pub_section pub_section2">
     <div class="title_box">
       <i>web publishing 02.</i>
