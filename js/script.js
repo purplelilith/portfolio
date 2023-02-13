@@ -27,7 +27,7 @@ $(function () {
 
 
   motion()
-  fnHomeText()  
+  fnHomeText()
   $(window).scroll(function () {
     motion()
     fnHomeText()
@@ -42,22 +42,28 @@ $(function () {
   }
 
   /* 퍼블리싱 상세 페이지 모션 */
-  function fnPubMotion() {
-    $('.pub_wrap').each(function () {
-      var offset = $(this).offset().top
-      if (scry >= offset - winh * 0.3) {
-        $(this).addClass('active')
-      } else {
-        $(this).removeClass('active')
-      }//if else 
-    })//each    
+  let offset
+  function fnWebMotion() {
+    offset = $('.portfolio_1_section').offset().top
+    if (scry >= offset - winh * 0.5) {
+      $('.portfolio_1_section').addClass('active')
+    } else {
+      $('.portfolio_1_section').removeClass('active')
+    }//if else 
+
+    offset = $('.portfolio_2_section').offset().top
+    if (scry >= offset - winh * 0.5) {
+      $('.portfolio_2_section').addClass('active')
+    } else {
+      $('.portfolio_2_section').removeClass('active')
+    }//if else 
   }//fn
 
-  fnPubMotion()
+  fnWebMotion()
   $(window).scroll(function () {
-    fnPubMotion()
+    fnWebMotion()
   }).resize(function () {
-    fnPubMotion()
+    fnWebMotion()
   })
 
 })

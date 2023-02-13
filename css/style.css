@@ -16,6 +16,10 @@ body {
   font-style: normal; /* 에이전트 스타일이 볼드나 이탤릭으로 설정된 아이들을 원래대로 돌려놓는 css */
   text-decoration: none;
   position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: scroll;
 }
 .num{
   font-family: 'Noto Sans KR', sans-serif; 
@@ -23,4 +27,16 @@ body {
 
 :root{
   --point: #5b6a57;
+  --beige:#e5ddd0;
+  --pink:#e7d0be;
+  --dark:#3b3b2e;
+}
+
+section{
+  width: 100%;
+}
+@media screen and (min-width:1200px){
+  section{
+    height: 100%;
+  }
 }

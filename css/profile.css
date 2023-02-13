@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding-top: 100px;
   margin-bottom: 150px;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 .profile figure{
@@ -53,20 +55,20 @@
   margin-bottom: 10px;
   color: var(--point);
 }
-.profile .text_section div>section {
+.profile .text_section div>div {
   margin-bottom: 40px;
 }
 
-.profile .text_section .left .skill ul {
+.profile .text_section .right .skill ul {
   display: flex;
 }
-.profile .text_section .left .skill ul li {
+.profile .text_section .right .skill ul li {
   margin-left: 10px;
   border: 1px solid #888;
   border-radius: 50%;
   overflow: hidden;
 }
-.profile .text_section .left .skill ul li img {
+.profile .text_section .right .skill ul li img {
   width: 50px;
   height: 50px;
   object-fit: cover;
@@ -83,6 +85,10 @@
 }
 .profile .text_section p {
   color: #666;
+  margin-bottom: 5px;
+}
+.profile .education ul li{
+  font-size: 0.8em;
 }
 .profile .text_section .inner {
   margin-bottom: 15px;
@@ -104,6 +110,7 @@
   .profile .text_section .right{
     width: 50%;
     padding: 20px 0;
+    box-sizing: border-box;
   }
   .profile .text_section .left {
     text-align: right;
@@ -114,7 +121,7 @@
     padding-left: 30px;
     border-left: 1px solid black;
   }
-  .profile .text_section div>section:last-child{
+  .profile .text_section div>div:last-child{
     margin-bottom: 0;
   }
   .profile .text_section .right::before,
