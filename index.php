@@ -10,13 +10,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/profile.css">
+  <link rel="stylesheet" href="./css/profile_1.css">
   <link rel="stylesheet" href="./css/gnb.css">
   <link rel="stylesheet" href="./css/home.css">
   <link rel="stylesheet" href="./css/contact.css">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/portfolio_1.css">
   <link rel="stylesheet" href="./css/portfolio_2.css">
+  <link rel="stylesheet" href="./css/layout.css">
   <script src="https://kit.fontawesome.com/64e2084006.js" crossorigin="anonymous"></script>
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="./js/script.js"></script>
@@ -50,14 +51,13 @@
   <?php include "home.php" ?>
   <!-- 첫화면 끝-->
   <!-- 프로필영역 시작 -->
-  <div class="profile_section">
-    <?php include "profile_1.php" ?>
-    <?php include "profile_2.php" ?>
-  </div>
+  <?php include "profile_1.php" ?>
   <!-- 프로필영역 끝 -->
   <!-- 포트폴리오 상세 시작 -->
   <?php include "portfolio_1.php" ?>
   <?php include "portfolio_2.php" ?>
+
+
   <!-- 포트폴리오 상세 끝-->
   <?php include "footer.php" ?>
 

@@ -2,12 +2,12 @@
   font-family: inherit; /* inherit : 부모의 설정을 강제로 받아오라는 뜻 */
   font-size: inherit;
   color: inherit;
-  font-weight:inherit;
+  font-weight: inherit;
   font-style: inherit;
-  text-decoration: inherit;  
+  text-decoration: inherit;
 }
 body {
-  font-family: 'Josefin Sans', 'Noto Sans KR', sans-serif; 
+  font-family: "Josefin Sans", "Noto Sans KR", sans-serif;
   /* 앞에 영어폰트/뒤에 한글폰트/ 앞에있는 폰트가 우선순위고 
   해당되는 폰트가 없을 시 뒷폰트 적용 */
   font-size: 14px;
@@ -21,22 +21,22 @@ body {
   box-sizing: border-box;
   overflow-y: scroll;
 }
-.num{
-  font-family: 'Noto Sans KR', sans-serif; 
+.num {
+  font-family: "Noto Sans KR", sans-serif;
 }
 
-:root{
+:root {
   --point: #5b6a57;
-  --beige:#e5ddd0;
-  --pink:#e7d0be;
-  --dark:#3b3b2e;
+  --beige: #e5ddd0;
+  --pink: #e7d0be;
+  --dark: #3b3b2e;
 }
 
-section{
+section {
   width: 100%;
 }
-@media screen and (min-width:1200px){
-  section{
+@media screen and (min-width: 1200px) {
+  section {
     height: 100%;
   }
 }

@@ -6,28 +6,29 @@
     </h3>
     <ul class="text_wrap">
       <p>
-        php환경의 멀티페이지 사이트 개발에 필요한 개발환경 구축 및 탬플릿 구조 설계방식을 학습하고,
-        선호도가 높은 기업형 웹사이트 탬플릿(cafe24 유료 탬플릿)을 레퍼런스로 참고하여,
-        svg와 스크롤 모션구현을 통해 심미성과 시각적 흥미 요소를 추가하고 미디어 쿼리와 제이쿼리를 이용해
-        다양한 디바이스 환경 최적화 및 UX를 고려한 UI환경을 제공할 수 있는 반응형 웹사이트 리뉴얼 과정을 통해,
-        퍼블리싱에 필요한 기초기술을 습득하는데 목적을 둠
-        </p>
+        현재 운영 중인 블루보틀 코리아 사이트는 단순한 블로그 형태로 블루보틀이 갖고 있는 다채로운 매력을 설명하기에
+        부족하였습니다. 블루보틀 코리아의 리뉴얼 사이트를 기획하고 리뉴얼하는 팀프로젝트를 진행했습니다.
+        전반적인 디자인부터 구성까지, 오롯이 팀원들과 함께 머리를 맞대어 기획, 제작하였습니다.
+        svg와 스크롤 모션 구현을 통해 심미성과 시각적 흥미요소를 추가하고,
+        다양한 디바이스 환경에 최적화된 반응형 웹사이트를 구현 하였습니다.
+        전반적인 디자인과 about us의 코딩을 진행하였습니다.
+      </p>
       <li>
         <dt>개발환경</dt>
         <dd>XAMPP</dd>
       </li>
       <li>
-        <dt>개발언어</dt> 
-        <dd>php, html, jquery, css</dd>
+        <dt>개발언어</dt>
+        <dd>php, html, jquery, scss, git</dd>
       </li>
       <li>
         <dt>컨셉</dt>
-        <dd>반응형, 기업, 모션그래픽, 모던한,</dd>
+        <dd>반응형, 기업, svg, 모던한, 흥미로운</dd>
       </li>
       <li>
         <dt>제작기간</dt>
         <dd>3주</dd>
-      </l>
+        </l>
     </ul>
   </div>
   <div class="middle">
@@ -37,7 +38,7 @@
   </div>
   <div class="right">
     <div class="right_bg"></div>
-    <a>Go Website</a>
-    <img src="./img/web_port/port_bluebottle.png" alt="">
+    <?php include "gotoweb.php" ?>
+    <a class="img_wrap" target="_blank" href="http://cordeliaingreen.dothome.co.kr/bluebottle/"><img src="./img/web_port/port_bluebottle.png" alt=""></a>
   </div>
 </section>

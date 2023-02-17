@@ -1,0 +1,59 @@
+/* gotoweb css 시작 -------------------------------- */
+a.gotoweb {
+  position: absolute;
+  display: block;
+  .a_wrap {
+    svg {
+      fill: var(--dark);
+      animation: gotoweb 10s infinite linear;
+      transition: fill 1s;
+      text {
+        font-size: 30px;
+        letter-spacing: 4.6px;
+      }
+    } //svg
+  } //a_wrap
+  @media screen and (min-width: 1200px) {
+    svg {
+      height: 25vh;
+      width: 25vw;
+    }
+    .hover_bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background-color: var(--pink);
+      transition: transform 1s;
+    }
+    &:hover {
+      svg {
+        fill: white;
+      }
+      .hover_bg {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    } //hover
+  } //lg size
+  @media screen and (max-width: 1200px) {
+    position: absolute;
+    z-index: 1;
+    top: -100px;
+    left: -10px;
+    svg {
+      height: 45vh;
+      width: 45vw;
+    }
+  } //sm size
+} //a
+@keyframes gotoweb {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

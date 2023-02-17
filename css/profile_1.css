@@ -1,0 +1,192 @@
+.profile_section {
+  position: relative;
+  padding-top: 100px;
+  box-sizing: border-box;
+  /*   @media screen and (min-width: 1200px) {
+    height: 100%;
+  } //lg_size */
+  /* motion ---------------------------------------------------- */
+  /* active ---------------------------------------------------- */
+}
+.profile_section .back_font {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1000px;
+}
+.profile_section figure {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.profile_section figure img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 1px solid var(--point);
+}
+.profile_section figure figcaption {
+  margin-top: 20px;
+}
+.profile_section figure figcaption b {
+  display: block;
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.profile_section figure figcaption p:not(.birth) {
+  font-weight: 500;
+}
+.profile_section figure figcaption .birth {
+  margin-top: 6px;
+}
+.profile_section .text_section {
+  width: 95%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+@media screen and (min-width: 800px) {
+  .profile_section .text_section {
+    display: flex;
+    justify-content: center;
+  }
+  .profile_section .text_section .left,
+  .profile_section .text_section .right {
+    width: 50%;
+    padding: 20px 0;
+    box-sizing: border-box;
+  }
+  .profile_section .text_section .left {
+    text-align: right;
+    padding-right: 30px;
+  }
+  .profile_section .text_section .right {
+    position: relative;
+    padding-left: 30px;
+    border-left: 1px solid black;
+  }
+  .profile_section .text_section .right::before, .profile_section .text_section .right::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    left: 0;
+    transform: translateX(-50%);
+    background: var(--point);
+  }
+  .profile_section .text_section .right::before {
+    top: 0;
+  }
+  .profile_section .text_section .right::after {
+    bottom: 0;
+  }
+  .profile_section .text_section div > div:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .profile_section .text_section {
+    text-align: center;
+  }
+}
+.profile_section .text_section h2 {
+  font-size: 1.4em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 10px 0;
+  color: var(--point);
+}
+.profile_section .text_section b {
+  display: block;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+.profile_section .text_section p {
+  color: #666;
+}
+.profile_section .text_section ul {
+  margin-top: 5px;
+  color: #aaa;
+  font-style: italic;
+}
+.profile_section .text_section .right .education i.num {
+  font-size: 0.8em;
+  font-style: italic;
+}
+.profile_section .text_section .right .education ul li {
+  font-size: 0.9em;
+}
+.profile_section .text_section .right .skill {
+  margin-bottom: 30px;
+}
+.profile_section .text_section .right .skill ul {
+  display: flex;
+}
+@media screen and (max-width: 800px) {
+  .profile_section .text_section .right .skill ul {
+    justify-content: center;
+  }
+}
+.profile_section .text_section .right .skill ul li {
+  margin: 0 5px;
+  border: 1px solid #888;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile_section .text_section .right .skill ul li img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.profile_section .text_section > div > div {
+  margin-top: 30px;
+}
+.profile_section .back_font {
+  opacity: 0;
+  transition: opacity 2s;
+}
+.profile_section figure {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s;
+}
+.profile_section .text_section {
+  overflow: hidden;
+}
+.profile_section .text_section .left,
+.profile_section .text_section .right {
+  transition: all 2s;
+  opacity: 0;
+}
+.profile_section .text_section .left {
+  transform: translateX(-100px);
+}
+.profile_section .text_section .right {
+  transform: translateX(100px);
+}
+.profile_section.active .back_font {
+  opacity: 0.07;
+}
+.profile_section.active figure {
+  opacity: 1;
+  transform: translateY(0);
+}
+.profile_section.active .left,
+.profile_section.active .right {
+  transform: translateX(0);
+  opacity: 1;
+}/*# sourceMappingURL=profile_1.css.map */

@@ -1,0 +1,194 @@
+.profile_section {
+  position: relative;
+  padding-top: 100px;
+  box-sizing: border-box;
+  .back_font {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1000px;
+  }
+  /*   @media screen and (min-width: 1200px) {
+    height: 100%;
+  } //lg_size */
+
+  figure {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 70px;
+    img {
+      display: block;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 50%;
+      margin: 0 auto;
+      border: 1px solid var(--point);
+    } //img
+    figcaption {
+      margin-top: 20px;
+      b {
+        display: block;
+        font-size: 2em;
+        font-weight: 500;
+        margin-bottom: 10px;
+      } //b
+      p:not(.birth) {
+        font-weight: 500;
+      }
+      .birth {
+        margin-top: 6px;
+      }
+    } //figcaption
+  } //figure
+  .text_section {
+    width: 95%;
+    max-width: 1200px;
+    margin: 30px auto;
+    @media screen and (min-width: 800px) {
+      display: flex;
+      justify-content: center;
+      .left,
+      .right {
+        width: 50%;
+        padding: 20px 0;
+        box-sizing: border-box;
+      }
+      .left {
+        text-align: right;
+        padding-right: 30px;
+      } //left
+      .right {
+        position: relative;
+        padding-left: 30px;
+        border-left: 1px solid black;
+        &::before,
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          left: 0;
+          transform: translateX(-50%);
+          background: var(--point);
+        }
+        &::before {
+          top: 0;
+        } //before
+        &::after {
+          bottom: 0;
+        }
+      } //right
+      div > div:last-child {
+        margin-bottom: 0;
+      }
+    } //lg_size
+    @media screen and (max-width: 800px) {
+      text-align: center;
+    } //sm_size
+    h2 {
+      font-size: 1.4em;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 10px 0;
+      color: var(--point);
+    } //h2 공통
+    b {
+      display: block;
+      font-weight: 500;
+      font-size: 1.1em;
+    } //b 공통
+    p {
+      color: #666;
+    } //p 공통
+    ul {
+      margin-top: 5px;
+      color: #aaa;
+      font-style: italic;
+    }
+    .left {
+    } //left
+    .right {
+      .education {
+        i.num {
+          font-size: 0.8em;
+          font-style: italic;
+        }
+        ul {
+          li {
+            font-size: 0.9em;
+          }
+        }
+      } //education
+      .skill {
+        margin-bottom: 30px;
+        ul {
+          display: flex;
+          @media screen and (max-width: 800px) {
+            justify-content: center;
+          } //sm_size
+          li {
+            margin: 0 5px;
+            border: 1px solid #888;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+              width: 50px;
+              height: 50px;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+        }
+      } //skill
+    } //right
+    > div > div {
+      margin-top: 30px;
+    }
+  } //text_section
+  /* motion ---------------------------------------------------- */
+  .back_font {
+    opacity: 0;
+    transition: opacity 2s;
+  }
+  figure {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s;
+  }
+  .text_section {
+    overflow: hidden;
+    .left,
+    .right {
+      transition: all 2s;
+      opacity: 0;
+    }
+    .left {
+      transform: translateX(-100px);
+    }
+    .right {
+      transform: translateX(100px);
+    }
+  }
+  /* active ---------------------------------------------------- */
+  &.active {
+    .back_font {
+      opacity: 0.07;
+    }
+    figure {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .left,
+    .right {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  } //active
+} //section
